@@ -1,5 +1,5 @@
 `use strict`
-const title_array = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Anniversary"]
+const title_array = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Monthiversary","Anniversary"]
 const together_date = [2022,12,2];
 var isBigDay = false;
 let width = window.innerWidth;
@@ -7,8 +7,8 @@ let width = window.innerWidth;
 function refreshTime(){
     console.log(width);
     var datetime = countingDays();
-    const show_days = (new Date().getDate() === together_date[2])?7:new Date().getDay();
-    document.getElementById("time").innerText = datetime + " days"; //it will print on html page
+    const show_days = (new Date().getDate() === together_date[2])?((new Date().getMonth()+1 === together_date[1])?8:7):new Date().getDay();
+    document.getElementById("time").innerText = datetime + " days" + ((countingDays()%100 == 0)?"!!":""); //it will print on html page
     // document.getElementById("time").innerText = "Days Together: "+ ((width<1040)?"\n":"") +datetime; //it will print on html page
     document.getElementById("title").textContent = title_array[show_days];
 
@@ -16,7 +16,7 @@ function refreshTime(){
     const formattedString = dateString.replace(" ","\n");
     document.getElementById("clock").innerText = formattedString; //it will print on html page
     
-    if(countingDays()==90 && !isBigDay){
+    if((countingDays()%100 == 0 || new Date().getDate() === together_date[2]) && !isBigDay){
         isBigDay = true;
         for(let i = 0; i < 3; i++){
             var parent = document.getElementById('effect');

@@ -10,7 +10,7 @@
     height: 100%;
     text-align: center;
     color: #333;
-    background: #b9dbff url("image/background_01.PNG") center scroll;
+    background: rgb(156, 119, 86) url("image/background_01.PNG") center scroll;
     background-size: auto 100%;
 }
 
@@ -55,7 +55,7 @@ img {
 }
 
 .wonder_boy_text{
-    font-family: 'Wonder Boy In Monster World', sans-serif;
+    font-family: 'wonder boy in monster world', sans-serif;
 }
 
 .pixel_text{
@@ -103,7 +103,7 @@ body {
   {
     --initialSize: 0.5vmin;
     --finalSize: 45vmin;
-    --particleSize: 0.2vmin;
+    --particleSize: 0.5vmin;
     --color1: yellow;
     --color2: khaki;
     --color3: white;
