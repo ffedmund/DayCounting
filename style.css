@@ -6,9 +6,8 @@
 
 @font-face{
   font-family:'wonder boy in monster world';
-  font-style:normal;
   font-weight:400;
-  src:url('text/Wonder_Boy_In_Monster_World.woff') format('woff')
+  src:url('text/Wonder_Boy_In_Monster_World.ttf');
 }
 
 .bg {
