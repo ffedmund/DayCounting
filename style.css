@@ -4,7 +4,12 @@
     src: url('text/Cubic_11_1.010_R.ttf'); /*URL to font*/
 }
 
-@font-face{font-family:'wonder boy in monster world';font-style:normal;font-weight:400;src:local('Wonder Boy In Monster World'),url(https://fonts.cdnfonts.com/s/10896/Wonder_Boy_In_Monster_World.woff) format('woff')}
+@font-face{
+  font-family:'wonder boy in monster world';
+  font-style:normal;
+  font-weight:400;
+  src:url('text/Wonder_Boy_In_Monster_World.woff') format('woff')
+}
 
 .bg {
     position: relative;
