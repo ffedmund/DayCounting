@@ -1,6 +1,6 @@
 `use strict`
 const title_array = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Monthiversary","Anniversary"]
-const together_date = [2022,12,2];
+const together_date = [2022,12,1];
 const sor9head_num = 5;
 var isBigDay = false;
 var imageNum = 1;
