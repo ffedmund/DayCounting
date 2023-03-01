@@ -10,13 +10,17 @@
   src:url('text/Wonder_Boy_In_Monster_World.ttf');
 }
 
+.button {
+  touch-action: manipulation; 
+}
+
 .bg {
     position: relative;
     width: 100%;
     height: 100%;
     text-align: center;
     color: #333;
-    background: rgb(156, 119, 86) url("image/background_01.PNG") center scroll;
+    background: #a37550 url("image/background_01.PNG") center scroll;
     background-size: auto 100%;
 }
 
