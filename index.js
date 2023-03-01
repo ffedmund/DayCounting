@@ -1,6 +1,6 @@
 `use strict`
 const title_array = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Monthiversary","Anniversary"]
-const together_date = [2022,12,1];
+const together_date = [2022,12,2];
 const sor9head_num = 5;
 var isBigDay = false;
 var imageNum = 1;
@@ -58,6 +58,8 @@ function getRandomInt(max) {
 function changeImage(image){
     imageNum = getRandomInt(sor9head_num);
     image.src = "image/sor9head_"+((imageNum+1<10)?"0":"")+(++imageNum)+".PNG";
+    image.classList.add("active");
+    setTimeout(() => { image.classList.remove("active");}, 20);
 }
 
 setInterval(refreshTime, 100);
