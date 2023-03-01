@@ -1,7 +1,9 @@
 `use strict`
 const title_array = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Monthiversary","Anniversary"]
 const together_date = [2022,12,2];
+const sor9head_num = 5;
 var isBigDay = false;
+var imageNum = 1;
 let width = window.innerWidth;
 
 function refreshTime(){
@@ -47,6 +49,15 @@ function bigday(){
     fireworkTag.className = "firework";
     console.log(fireworkTag);
     return fireworkTag;
+}
+
+function getRandomInt(max) {
+    return Math.floor(Math.random() * max);
+  }
+
+function changeImage(image){
+    imageNum = getRandomInt(sor9head_num);
+    image.src = "image/sor9head_"+((imageNum+1<10)?"0":"")+(++imageNum)+".PNG";
 }
 
 setInterval(refreshTime, 100);

@@ -50,7 +50,29 @@
 }
 
 .title{
-   font-size: 3.5rem; 
+   font-size: 3.8rem; 
+}
+
+@media screen and (max-width: 600px) {
+  div.title {
+    font-size: 3.3rem;
+  }
+}
+
+.icon-conatiner:active {
+  animation: press 0.2s 1 linear;
+}
+
+@keyframes press {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.92);
+  }
+  to {
+    transform: scale(1);
+  }
 }
 
 .bg .center {
