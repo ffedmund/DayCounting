@@ -183,7 +183,7 @@ body {
   {
     --initialSize: 0.5vmin;
     --finalSize: 45vmin;
-    --particleSize: 0.5vmin;
+    --particleSize: 1vmin;
     --color1: yellow;
     --color2: khaki;
     --color3: white;
