@@ -59,7 +59,7 @@ function changeImage(image){
     imageNum = getRandomInt(sor9head_num);
     image.src = "image/sor9head_"+((imageNum+1<10)?"0":"")+(++imageNum)+".PNG";
     image.classList.add("active");
-    setTimeout(() => { image.classList.remove("active");}, 20);
+    setTimeout(() => { image.classList.remove("active");}, 300);
 }
 
 setInterval(refreshTime, 100);

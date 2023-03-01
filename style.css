@@ -90,9 +90,9 @@
   }
 }
 
-.icon-container:active {
+/* .icon-container:active {
   animation: press 0.2s 1 linear;
-}
+} */
 
 .active{
   animation: press 0.2s 1 linear;
