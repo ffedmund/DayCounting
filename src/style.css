@@ -118,7 +118,7 @@
     /* The image should be placed naturally in the document flow */
     
     /* Center the image using flexbox or margin */
-    margin-top: 50px;
+    /* margin-top: 25px; */
     /* This will center the image horizontally when it's in a flex container */
     
     /* Keep width for responsiveness, but check its behavior on different devices */
@@ -547,6 +547,7 @@
 .content-wrapper {
     /* Use margin: auto to center this group vertically */
     display: flex;
+    padding-bottom: 35px;
     flex-direction: column;
     align-items: center;
 }

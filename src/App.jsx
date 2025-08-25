@@ -22,7 +22,7 @@ import PinballGame from './Pinball';
 const TITLE_ARRAY = [
   "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Monthiversary", "Anniversary"
 ];
-const TOGETHER_DATE = [2022, 12, 1]; // Year, Month, Day
+const TOGETHER_DATE = [2022, 12, 2]; // Year, Month, Day
 
 // Using placeholders for images
 const sor9Heads = [
