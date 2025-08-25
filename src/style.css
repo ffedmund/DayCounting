@@ -21,7 +21,7 @@
 }
 
 .bg {
-    position: relative;
+    flex-direction: column;
     width: 100vw;
     min-height: 100vh;
     text-align: center;
@@ -33,8 +33,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    padding: 2rem 1rem 0 0;
+    justify-content: end;
+    padding: 0rem 1rem 0 0;
     box-sizing: border-box;
 }
 
@@ -118,7 +118,7 @@
     /* The image should be placed naturally in the document flow */
     
     /* Center the image using flexbox or margin */
-    margin: 0 auto; 
+    margin-top: 50px;
     /* This will center the image horizontally when it's in a flex container */
     
     /* Keep width for responsiveness, but check its behavior on different devices */
@@ -130,13 +130,8 @@
     /* Retain other styles */
     height: auto;
     filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.3));
-    transition: transform 0.3s ease;
     z-index: 5;
     bottom: 0;
-}
-
-.capybara:hover {
-    transform: translateX(-50%) scale(1.02);
 }
 
 .ribbon {
@@ -263,8 +258,6 @@
 
     .capybara {
         bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
         width: min(440px, 62.5vw);
     }
 }
@@ -320,8 +313,6 @@
 
     .capybara {
         bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
         width: min(350px, 56.25vw);
     }
 
@@ -518,11 +509,11 @@
 }
 
 .heart-container {
-    position: absolute;
+    position: fixed;
     width: 100%;
-    height: 100%;
     top: 100%;
     left: 0;
+    pointer-events: none;
 }
 
 .heart {
@@ -551,4 +542,11 @@
 .middle-icon {
     width: clamp(30px, 8vw, 80px);
     height: auto;
+}
+
+.content-wrapper {
+    /* Use margin: auto to center this group vertically */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
