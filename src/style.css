@@ -113,15 +113,26 @@
 }
 
 .capybara {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: min(560px, 75vw);
+    /* Use static or relative positioning for better mobile compatibility */
+    position: relative; 
+    /* The image should be placed naturally in the document flow */
+    
+    /* Center the image using flexbox or margin */
+    margin: 0 auto; 
+    /* This will center the image horizontally when it's in a flex container */
+    
+    /* Keep width for responsiveness, but check its behavior on different devices */
+    width: min(560px, 75vw); 
+    
+    /* Remove transform if using margin auto */
+    /* transform: translateX(-50%); */ 
+    
+    /* Retain other styles */
     height: auto;
     filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.3));
     transition: transform 0.3s ease;
     z-index: 5;
+    bottom: 0;
 }
 
 .capybara:hover {
@@ -540,5 +551,4 @@
 .middle-icon {
     width: clamp(30px, 8vw, 80px);
     height: auto;
-    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
 }
