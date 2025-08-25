@@ -12,8 +12,8 @@ export default defineConfig({
         name: 'Days',
         short_name: 'Days',
         display: 'standalone',
-        background_color: '#fff',
-        theme_color: '#fff',
+        background_color: '#FAD691',
+        theme_color: '#FAD691',
         icons: [
           {
             src: '/icon_ios.png',

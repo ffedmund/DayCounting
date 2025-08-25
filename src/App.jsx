@@ -134,26 +134,25 @@ function App() {
 
   return (
     <div>
-      <div className="head-row">
-        <img
-          id="on9-ribbon"
-          src={ribbonOn9Head}
-          alt="on9head"
-          className="ribbon"
-          onClick={() => handleImageClick(setOn9Head, on9Heads, "on9-ribbon")}
-        />
-        <img src={getMiddleIcon()} className="middle-icon" alt="icon" />
-        <img
-          id="sor9-ribbon"
-          src={ribbonSor9Head}
-          className="ribbon"
-          alt="badge"
-          onClick={() => handleImageClick(setSor9Head, sor9Heads, "sor9-ribbon")}
-        />
-      </div>
       <div className="bg">
         {/* Head Pair Row at Top */}
-
+        <div className="head-row">
+          <img
+            id="on9-ribbon"
+            src={ribbonOn9Head}
+            alt="on9head"
+            className="ribbon"
+            onClick={() => handleImageClick(setOn9Head, on9Heads, "on9-ribbon")}
+          />
+          <img src={getMiddleIcon()} className="middle-icon" alt="icon" />
+          <img
+            id="sor9-ribbon"
+            src={ribbonSor9Head}
+            className="ribbon"
+            alt="badge"
+            onClick={() => handleImageClick(setSor9Head, sor9Heads, "sor9-ribbon")}
+          />
+        </div>
         {/* Title at the top */}
         <div className="title-top">
           {title}
@@ -168,6 +167,7 @@ function App() {
         <div className="datetime-line">
           {dateString} {timeString}
         </div>
+        <div style={{ height: '8vh' }}></div> 
 
         {/* Capybara Image - Centered */}
         <img src={capybara} className="capybara" alt="capybara" />
