@@ -3,8 +3,8 @@
   "short_name": "Days",
   "start_url": ".",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#ffffff",
+  "background_color": "#FAD691",
+  "theme_color": "#FAD691",
   "icons": [
     {
       "src": "/icon_ios.png",

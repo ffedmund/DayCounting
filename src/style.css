@@ -19,6 +19,10 @@
     width: 100%;
 }
 
+html, body {
+  overflow: hidden;
+}
+
 .bg {
     position: relative;
     width: 100vw;

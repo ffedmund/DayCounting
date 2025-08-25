@@ -57,10 +57,10 @@ function getRandomInt(max) {
 
 // --- Components ---
 const BigdayFirework = () => <div>
-    {/* <div className="firework"></div>
+  {/* <div className="firework"></div>
     <div className="firework"></div> */}
-    <HeartEmitter />
-  </div>;
+  <HeartEmitter />
+</div>;
 
 const HeartIcon = () => (
   <svg className="heart-icon" viewBox="0 0 24 24" fill="red" xmlns="http://www.w3.org/2000/svg">
@@ -115,72 +115,68 @@ function App() {
     }
   };
 
-  function getMiddleIcon()
-  {
-      if(ribbonSor9Head === sor9_02 && ribbonOn9Head === on9_02) {
-        return clown;
-      }
-      else if(ribbonSor9Head === sor9_01 && ribbonOn9Head === on9_03) {
-        return bowling;
-      }
-      else if(ribbonSor9Head === sor9_04 && ribbonOn9Head === on9_03) {
-        return capy;
-      }
-      else if(ribbonSor9Head === sor9_05 && ribbonOn9Head === on9_01) {
-        return slime;
-      }
-      return heart;
+  function getMiddleIcon() {
+    if (ribbonSor9Head === sor9_02 && ribbonOn9Head === on9_02) {
+      return clown;
+    }
+    else if (ribbonSor9Head === sor9_01 && ribbonOn9Head === on9_03) {
+      return bowling;
+    }
+    else if (ribbonSor9Head === sor9_04 && ribbonOn9Head === on9_03) {
+      return capy;
+    }
+    else if (ribbonSor9Head === sor9_05 && ribbonOn9Head === on9_01) {
+      return slime;
+    }
+    return heart;
   }
 
   return (
-    <div>
-      <div className="bg">
-        {/* Head Pair Row at Top */}
-        <div className="head-row">
-          <img
-            id="on9-ribbon"
-            src={ribbonOn9Head}
-            alt="on9head"
-            className="ribbon"
-            onClick={() => handleImageClick(setOn9Head, on9Heads, "on9-ribbon")}
-          />
-          <img src={getMiddleIcon()} className="middle-icon" alt="icon" />
-          <img
-            id="sor9-ribbon"
-            src={ribbonSor9Head}
-            className="ribbon"
-            alt="badge"
-            onClick={() => handleImageClick(setSor9Head, sor9Heads, "sor9-ribbon")}
-          />
-        </div>
-        {/* Title at the top */}
-        <div className="title-top">
-          {title}
-        </div>
-
-        {/* Day Counter */}
-        <div className="day-counter">
-          <span className="day-text">Day {datetime}</span>
-        </div>
-
-        {/* Date and Time Line */}
-        <div className="datetime-line">
-          {dateString} {timeString}
-        </div>
-        <div style={{ height: '8vh' }}></div> 
-
-        {/* Capybara Image - Centered */}
-        <img src={capybara} className="capybara" alt="capybara" />
-        {
-          bigDay && (
-            <>
-              <BigdayFirework />
-            </>
-          )
-        }
+    <div className="bg">
+      {/* Head Pair Row at Top */}
+      <div className="head-row">
+        <img
+          id="on9-ribbon"
+          src={ribbonOn9Head}
+          alt="on9head"
+          className="ribbon"
+          onClick={() => handleImageClick(setOn9Head, on9Heads, "on9-ribbon")}
+        />
+        <img src={getMiddleIcon()} className="middle-icon" alt="icon" />
+        <img
+          id="sor9-ribbon"
+          src={ribbonSor9Head}
+          className="ribbon"
+          alt="badge"
+          onClick={() => handleImageClick(setSor9Head, sor9Heads, "sor9-ribbon")}
+        />
       </div>
-    </div>
+      {/* Title at the top */}
+      <div className="title-top">
+        {title}
+      </div>
 
+      {/* Day Counter */}
+      <div className="day-counter">
+        <span className="day-text">Day {datetime}</span>
+      </div>
+
+      {/* Date and Time Line */}
+      <div className="datetime-line">
+        {dateString} {timeString}
+      </div>
+      <div style={{ height: '8vh' }}></div>
+
+      {/* Capybara Image - Centered */}
+      <img src={capybara} className="capybara" alt="capybara" />
+      {
+        bigDay && (
+          <>
+            <BigdayFirework />
+          </>
+        )
+      }
+    </div>
   );
 }
 
