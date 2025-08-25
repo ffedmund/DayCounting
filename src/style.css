@@ -17,10 +17,7 @@
 #root {
     height: 100%;
     width: 100%;
-}
-
-html, body {
-  overflow: hidden;
+    background-color: #FAD691;
 }
 
 .bg {
@@ -202,7 +199,7 @@ html, body {
 /* --- Responsive Design --- */
 @media (max-width: 768px) {
     .bg {
-        padding: 1rem 0.5rem 0 0.5rem;
+        padding: 0rem 0.5rem 0 0.5rem;
     }
 
     .title-top {
