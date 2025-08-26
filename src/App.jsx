@@ -134,7 +134,6 @@ function App() {
 
   return (
     <>
-      <div className="spacer"></div>
       <div className="bg">
         {/* Head Pair Row at Top */}
         <div className="content-wrapper">
@@ -180,6 +179,7 @@ function App() {
           )
         }
       </div>
+      <div className="spacer"></div>
       <img src={capybara} className="capybara" alt="capybara" />
     </>
   );

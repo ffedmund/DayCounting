@@ -532,7 +532,6 @@
 .content-wrapper {
     /* Use margin: auto to center this group vertically */
     display: flex;
-    padding-bottom: 35px;
     flex-direction: column;
     align-items: center;
 }
