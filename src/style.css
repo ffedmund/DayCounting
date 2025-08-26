@@ -23,7 +23,7 @@
 .bg {
     flex-direction: column;
     width: 100vw;
-    min-height: 100vh;
+    min-height: 100dvh;
     text-align: center;
     color: #333;
     background: #FAD691;
