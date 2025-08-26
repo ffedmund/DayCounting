@@ -43,3 +43,9 @@
 .read-the-docs {
   color: #888;
 }
+
+.spacer{
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 30vh;
+}

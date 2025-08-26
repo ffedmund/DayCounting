@@ -134,6 +134,7 @@ function App() {
 
   return (
     <>
+      <div className="spacer"></div>
       <div className="bg">
         {/* Head Pair Row at Top */}
         <div className="content-wrapper">
