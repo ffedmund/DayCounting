@@ -22,7 +22,9 @@ a:hover {
   color: #535bf2;
 }
 
-body {
+html, body {
+  overflow: hidden;
+  background-color: #FAD691;
   margin: 0;
   display: flex;
   place-items: center;

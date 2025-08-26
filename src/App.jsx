@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./style.css"; // Copy and adapt CSS here
+import "./App.css";
 import capybara from "./assets/image/capybara.png";
 import sor9_01 from "./assets/sor9head_01.PNG";
 import sor9_02 from "./assets/sor9head_02.PNG";
@@ -132,52 +133,54 @@ function App() {
   }
 
   return (
-    <div className="bg">
-      {/* Head Pair Row at Top */}
-      <div className="content-wrapper">
-        <div className="head-row">
-          <img
-            id="on9-ribbon"
-            src={ribbonOn9Head}
-            alt="on9head"
-            className="ribbon"
-            onClick={() => handleImageClick(setOn9Head, on9Heads, "on9-ribbon")}
-          />
-          <img src={getMiddleIcon()} className="middle-icon" alt="icon" />
-          <img
-            id="sor9-ribbon"
-            src={ribbonSor9Head}
-            className="ribbon"
-            alt="badge"
-            onClick={() => handleImageClick(setSor9Head, sor9Heads, "sor9-ribbon")}
-          />
-        </div>
-        {/* Title at the top */}
-        <div className="title-top">
-          {title}
+    <>
+      <div className="bg">
+        {/* Head Pair Row at Top */}
+        <div className="content-wrapper">
+          <div className="head-row">
+            <img
+              id="on9-ribbon"
+              src={ribbonOn9Head}
+              alt="on9head"
+              className="ribbon"
+              onClick={() => handleImageClick(setOn9Head, on9Heads, "on9-ribbon")}
+            />
+            <img src={getMiddleIcon()} className="middle-icon" alt="icon" style={{marginRight:"4px"}}/>
+            <img
+              id="sor9-ribbon"
+              src={ribbonSor9Head}
+              className="ribbon"
+              alt="badge"
+              onClick={() => handleImageClick(setSor9Head, sor9Heads, "sor9-ribbon")}
+            />
+          </div>
+          {/* Title at the top */}
+          <div className="title-top">
+            {title}
+          </div>
+
+          {/* Day Counter */}
+          <div className="day-counter">
+            <span className="day-text">Day {datetime}</span>
+          </div>
+
+          {/* Date and Time Line */}
+          <div className="datetime-line">
+            {dateString} {timeString}
+          </div>
         </div>
 
-        {/* Day Counter */}
-        <div className="day-counter">
-          <span className="day-text">Day {datetime}</span>
-        </div>
-
-        {/* Date and Time Line */}
-        <div className="datetime-line">
-          {dateString} {timeString}
-        </div>
+        {/* Capybara Image - Centered */}
+        {
+          bigDay && (
+            <>
+              <BigdayFirework />
+            </>
+          )
+        }
       </div>
-
-      {/* Capybara Image - Centered */}
       <img src={capybara} className="capybara" alt="capybara" />
-      {
-        bigDay && (
-          <>
-            <BigdayFirework />
-          </>
-        )
-      }
-    </div>
+    </>
   );
 }
 

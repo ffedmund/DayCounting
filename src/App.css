@@ -1,9 +1,11 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  height: 100%;
+  width: 100%;
+  align-items: center;
   text-align: center;
-  background-color: #FAD691;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
 }
 
 .logo {
@@ -40,8 +42,4 @@
 
 .read-the-docs {
   color: #888;
-}
-
-html, body {
-  overflow: hidden;
 }

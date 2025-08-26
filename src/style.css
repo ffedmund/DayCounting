@@ -13,27 +13,12 @@
     src: url('text/Wonder_Boy_In_Monster_World.ttf');
 }
 
-/* --- General Setup --- */
-#root {
-    height: 100%;
-    width: 100%;
-    background-color: #FAD691;
-}
-
 .bg {
-    flex-direction: column;
     width: 100vw;
-    min-height: 100dvh;
     text-align: center;
     color: #333;
-    background: #FAD691;
     font-family: 'wonder boy in monster world', 'Cinzel', serif;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: end;
     padding: 0rem 1rem 0 0;
     box-sizing: border-box;
 }
@@ -114,7 +99,7 @@
 
 .capybara {
     /* Use static or relative positioning for better mobile compatibility */
-    position: relative; 
+    position: fixed; 
     /* The image should be placed naturally in the document flow */
     
     /* Center the image using flexbox or margin */
